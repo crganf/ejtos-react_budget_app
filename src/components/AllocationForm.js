@@ -85,7 +85,7 @@ const AllocationForm = (props) => {
             </option>
           </select>
 
-          <div class="input-group input-group-sm mb-1">
+          <div class="input-group input-group-sm mb-1 mt-1">
             <span class="input-group-text">{currency}</span>
             <input
               required="required"

@@ -17,16 +17,20 @@ const Budget = () => {
   };
   return (
     <div className="alert alert-secondary">
-      <span>
-        Budget: {currency}
-        {budget}
-      </span>
-      <input
-        type="number"
-        step="10"
-        value={newBudget}
-        onChange={handleBudgetChange}
-      ></input>
+      <span>Budget:</span>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">{currency}</span>
+        </div>
+        <input
+          type="number"
+          class="form-control"
+          aria-label="Amount (to the nearest dollar)"
+          step="10"
+          value={newBudget}
+          onChange={handleBudgetChange}
+        ></input>
+      </div>
     </div>
   );
 };
